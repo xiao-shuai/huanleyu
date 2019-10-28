@@ -29,10 +29,8 @@ import {Provider} from 'mobx-react'
 import JPush from 'jpush-react-native';
 
 import { WebView } from 'react-native-webview';
-
-
-import aac from './app/mommbx/mbindex'
-import Tymonlvy from './app/luyou'
+import dd from './app/mmbb/index'
+import Loijuroute from './app/dh'
 
 // componentDidMount() {
   JPush.init();
@@ -139,8 +137,8 @@ get_info=()=>{
   }
 
     return (
-      <Provider {...aac}>
- <Tymonlvy />
+      <Provider {...dd}>
+ <Loijuroute />
     </Provider>
     );
   }

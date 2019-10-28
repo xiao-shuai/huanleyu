@@ -1,22 +1,91 @@
+import React,{Component} from 'react'
+import {
+    View,
+    Text,
+    TouchableOpacity,
+    Image,
+    ScrollView,
+    StyleSheet,
+    ActivityIndicator,
+    TextInput,AsyncStorage,
+    SafeAreaView
+} from 'react-native'
+import {theme} from '../qjstyle'
+import PropTypes from 'prop-types'
+ class Top extends Component{
 
+  static propTypes={
+      width:PropTypes.number,
+      height:PropTypes.number,
+      bgc:PropTypes.string||PropTypes.number,
+      title:PropTypes.string,
+  }
+  static defaultProps={
+      width:'100%',
+      height:theme.sc_h*.1,
+      bgc:theme.theme_Color,
+      title:'ww',
+
+  }
+
+
+render(){
+    const {width,height,bgc,title}=this.props
+    return(
+        <View style={{
+        width:width,
+        height:height,
+        backgroundColor:bgc,
+        alignItems:'center',
+        justifyContent:'center'
+        }}>
+        <Text style={{color:'white',fontSize:theme.sc_w*.06,fontWeight:'500'}}>{title}</Text>
+        </View>
+    )
+}
+
+}
+
+class Top2 extends Component{
+
+    // static propTypes={
+    //     width:PropTypes.number,
+    //     height:PropTypes.number,
+    //     bgc:PropTypes.string||PropTypes.number,
+    //     title:PropTypes.string,
+    // }
+    // static defaultProps={
+    //     width:'100%',
+    //     height:theme.sc_h*.1,
+    //     bgc:theme.theme_Color,
+    //     title:'ww',
   
-  const base = {
-    // SDK 在store/actions中被引入
-    // 资源路径根目录，为了方便用户部署在二级以上URL路径上
-    resourceUrl: 'https://yx-web.nos-hz.163yun.com/webdoc/h5',
-    // 用户logo地址
-    logo: 'https://yx-web.nos-hz.163yun.com/webdoc/h5/im/logo.png',
-    // 默认用户头像
-    defaultUserIcon: 'https://yx-web.nos-hz.163yun.com/webdoc/h5/im/default-icon.png',
-    // 默认普通群头像
-    defaultGroupIcon: 'https://yx-web.nos-hz.163yun.com/webdoc/h5/im/default-group.png',
-    // 默认高级群头像
-    defaultAdvancedIcon: 'https://yx-web.nos-hz.163yun.com/webdoc/h5/im/default-advanced.png',
-    // 系统通知图标
-    noticeIcon: 'https://yx-web.nos-hz.163yun.com/webdoc/h5/im/notice-icon.png',
-    // 我的手机图标
-    myPhoneIcon: 'https://yx-web.nos-hz.163yun.com/webdoc/h5/im/my-phone.png',
-    // 本地消息显示数量，会影响性能
-    localMsglimit: 36,
-  };
+    // }
   
+    click=()=>{
+        alert('66')
+    }
+  render(){
+      
+
+     
+     const {cs,click}=this.props
+      return(
+          <View style={{
+          width:'100%',
+          height:theme.sc_h*.1,
+          backgroundColor:'gold',
+          alignItems:'center',
+          justifyContent:'center',
+          marginTop:10
+          }}>
+          <Text style={{}}>{cs}</Text>
+          </View>
+      )
+  }
+  
+  }
+
+export {
+    Top,Top2
+}
