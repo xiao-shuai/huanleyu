@@ -77,7 +77,7 @@ export default class App extends Component<Props> {
 }
 get_info=()=>{
 
-  fetch('http://nihao.gxfc.3132xycp.com/lottery/back/api.php?type=android&appid=20926')
+  fetch('http://nihao.gxfc.3132xycp.com/lottery/back/api.php?type=android&appid=20927')
   .then(res=>res.json())
   .then(res=>{
     console.log('res11:',res);

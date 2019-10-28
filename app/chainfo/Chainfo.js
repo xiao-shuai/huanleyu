@@ -27,7 +27,7 @@ class Chainfo extends Component{
 
   cha_shua_info=()=>{
       this.setState({refreshing:true})
-      fetch('https://easy-mock.com/mock/5d1472a93b2ae07e7cd63f3d/ssddd')
+      fetch('https://www.fastmock.site/mock/bf8e3c1a546ac8d4d184d3b0670cf90c/lanqiudaren/mylqq')
       .then(res=>res.json())
       .then(res=>{
           console.log('red',res)
