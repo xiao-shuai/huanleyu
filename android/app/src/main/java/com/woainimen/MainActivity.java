@@ -1,4 +1,4 @@
-package com.huanleyusw;
+package com.mengxiaoliuy;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle; 
