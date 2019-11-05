@@ -140,6 +140,7 @@ class Lg extends Component{
       onChangeText={(zc_pw)=>{
         this.setState({zc_pw})
       }}
+      secureTextEntry={true}
       containerStyle={styles.in_c} 
       inputContainerStyle={{borderBottomWidth:0}}
       placeholder='Please enter password'
@@ -148,6 +149,7 @@ class Lg extends Component{
       onChangeText={(zc_pw2)=>{
           this.setState({zc_pw2})
       }}
+      secureTextEntry={true}
       containerStyle={styles.in_c} 
       inputContainerStyle={{borderBottomWidth:0}}
       placeholder='Please confirm the password again'

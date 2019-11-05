@@ -128,13 +128,13 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.mengxiaoliuy"
+        applicationId "com.vivo.yyapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 5
         versionName "1.5.0"
         manifestPlaceholders = [
-                  JPUSH_APPKEY: "27325b862d874aae7c85f078",        //在此替换你的APPKey
+                  JPUSH_APPKEY: "607235eee77bd71e7beaf957",        //在此替换你的APPKey
                   JPUSH_CHANNEL: "default"        //在此替换你的channel
           ]
     }

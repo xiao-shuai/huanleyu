@@ -1,4 +1,4 @@
-package com.mengxiaoliuy;
+package com.vivo.yyapp;
 
 import android.app.Application;
 import android.util.Log;

@@ -1,4 +1,4 @@
-package com.mengxiaoliuy;
+package com.vivo.yyapp;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle; 
